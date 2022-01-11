@@ -16,6 +16,7 @@ module.exports = {
         return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/"+projectiD);
       },
       network_id: '3',
+      //timeoutBlocks: 300,
       gas: 4700000
     },
     rinkeby: {
@@ -23,6 +24,8 @@ module.exports = {
         return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/"+projectiD);
       },
       network_id: '4',
+      //timeoutBlocks: 3000,
+      networkCheckTimeout: 999999,
       gas: 4700000
     },
     bscTestnet: {

@@ -6,6 +6,9 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract SimpleCollectible is ERC721, ERC721URIStorage, Ownable {
+    uint256  public currentTokenId=0;
+    string  public myName="test";
+
     constructor() ERC721("KevinNFT", "KEVIN") {}
 
     function setTokenURI(uint256 tokenId, string memory uri)
@@ -14,6 +17,7 @@ contract SimpleCollectible is ERC721, ERC721URIStorage, Ownable {
     {
         _safeMint(msg.sender, tokenId);
         _setTokenURI(tokenId, uri);
+        currentTokenId = tokenId;
     }
 
     // The following functions are overrides required by Solidity.
@@ -28,5 +32,9 @@ contract SimpleCollectible is ERC721, ERC721URIStorage, Ownable {
     returns (string memory)
     {
         return super.tokenURI(tokenId);
+    }
+
+    function buyTokens(string memory name1) public {
+        myName = name1;
     }
 }

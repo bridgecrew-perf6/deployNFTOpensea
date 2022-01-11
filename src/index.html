@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kevin Mint NFT</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12">
+            <h1 class="text-center">kevin Mint NFT</h1>
+
+            <hr/>
+            <br/>
+        </div>
+        <div id="loader">
+          <p class="text-center">Loading...</p>
+        </div>
+        <div id="content" class="text-center" style="display: none;">
+          <h3>
+            Pre-Sale Mint(<span id="currentTokenId" style="color: green;">0</span>/10000)
+          </h3>
+          <br/>
+          <form onSubmit="App.mint(); return false;" role="form">
+            <div class="form-group">
+              <label for="AMOUNT" style="float: left">AMOUNT: </label>
+              <input type="number" class="form-control" id="amount" min="1" max="1" placeholder="AMOUNT" value="1">
+            </div>
+
+            <div class="form-group">
+              <label for="AMOUNT" style="float: left">Total Price: </label>
+              <input type="text" class="form-control" id="price" placeholder="price" value="0.01" >
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <button type="submit" name="startMint" class="btn btn-primary btn-lg">Connect a wallet and Mint</button>
+                  <input type="hidden"   id="currentTokenIdHidden" value="0">
+                </span>
+              </div>
+            </div>
+
+          </form>
+            <hr>
+          <p id="accountAddress"></p>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

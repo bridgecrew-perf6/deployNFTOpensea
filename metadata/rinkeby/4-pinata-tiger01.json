@@ -1,0 +1,11 @@
+{
+    "name": "tiger01",
+    "description": "tiger01",
+    "image": "https://gateway.pinata.cloud/ipfs/QmWRJQSwg2KZNnCLnoc8RPtKHyQeFb9ur6JGZzPwCrayoi",
+    "attributes": [
+        {
+            "trait_type": "cuteness",
+            "value": 100
+        }
+    ]
+}

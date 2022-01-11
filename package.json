@@ -1,4 +1,19 @@
 {
+  "name": "kevin-deploy-nft-opensea",
+  "version": "1.0.0",
+  "description": "kevin deploy nft opensea",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "kevin gates",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.0",
     "truffle-hdwallet-provider": "^1.0.17"
