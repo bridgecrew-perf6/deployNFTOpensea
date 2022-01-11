@@ -7,7 +7,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract SimpleCollectible is ERC721, ERC721URIStorage, Ownable {
     uint256  public currentTokenId=0;
-    string  public myName="test";
 
     constructor() ERC721("KevinNFT", "KEVIN") {}
 
@@ -32,9 +31,5 @@ contract SimpleCollectible is ERC721, ERC721URIStorage, Ownable {
     returns (string memory)
     {
         return super.tokenURI(tokenId);
-    }
-
-    function buyTokens(string memory name1) public {
-        myName = name1;
     }
 }
