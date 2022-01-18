@@ -14,7 +14,7 @@ module.exports = async callback => {
     // console.log(tx2)
 
 
-    const tx = await nft.setTokenURI(5, "https://nftrarity.herokuapp.com/metadata/rinkeby/2-kevinGatesAvatar.json")
+    const tx = await nft.setTokenURI(0, "https://nftrarity.herokuapp.com/metadata/rinkeby/2-kevinGatesAvatar.json")
 
     console.log(tx)
 

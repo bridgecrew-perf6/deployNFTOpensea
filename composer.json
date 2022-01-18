@@ -1,0 +1,11 @@
+{
+    "name": "kevin/deploy-nft-opensea_heroku",
+    "type": "project",
+    "authors": [
+        {
+            "name": "kevin Gates",
+            "email": "kevinobama@gmail.com"
+        }
+    ],
+    "require": {}
+}

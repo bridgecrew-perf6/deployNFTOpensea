@@ -1,0 +1,11 @@
+{
+    "name": "tiger91",
+    "description": "tiger91",
+    "image": "https://mintnft.herokuapp.com/metadata/images/tigers/tiger91.jpeg",
+    "attributes": [
+        {
+            "trait_type": "cuteness",
+            "value": 100
+        }
+    ]
+}

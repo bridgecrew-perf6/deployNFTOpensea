@@ -13,7 +13,15 @@
       <div class="row">
         <div class="col-lg-12">
             <h1 class="text-center">kevin Mint NFT</h1>
-
+            <h5 class="text-center">
+              Network:
+              <select name="contract">
+                <option value="0xec41019FCD0B84C9db1FBa4c7835c40e0370CcfA">rinkeby</option>
+                <option value="0xec41019FCD0B84C9db1FBa4c7835c40e0370CcfA">ropsten</option>
+                <option value="0xec41019FCD0B84C9db1FBa4c7835c40e0370CcfA">ETH mainnet</option>
+                <option value="0xec41019FCD0B84C9db1FBa4c7835c40e0370CcfA">Solana mainnet</option>
+              </select>
+            </h5>
             <hr/>
             <br/>
         </div>
@@ -32,15 +40,14 @@
             </div>
 
             <div class="form-group">
-              <label for="AMOUNT" style="float: left">Total Price: </label>
-              <input type="text" class="form-control" id="price" placeholder="price" value="0.01" >
+              <label for="price" style="float: left">Total Price(ETH): </label>
+              <input type="text" class="form-control" id="price" placeholder="price" value="0.001">
             </div>
 
             <div class="form-group">
               <div class="input-group">
                 <span class="input-group-btn">
                   <button type="submit" name="startMint" class="btn btn-primary btn-lg">Connect a wallet and Mint</button>
-                  <input type="hidden"   id="currentTokenIdHidden" value="0">
                 </span>
               </div>
             </div>
@@ -48,6 +55,9 @@
           </form>
             <hr>
           <p id="accountAddress"></p>
+          <p> after you mint,It will display in opensea:
+          <a href="https://testnets.opensea.io/collection/kevinnft-v3" target="_blank">opensea</a>
+          </p>
         </div>
       </div>
     </div>

@@ -1,0 +1,11 @@
+{
+    "name": "kevinGatesAvatar",
+    "description": "I'm java solidity developer",
+    "image": "https://nftrarity.herokuapp.com/metadata/rinkeby/kevinGatesAvatar.jpeg",
+    "attributes": [
+        {
+            "trait_type": "cuteness",
+            "value": 100
+        }
+    ]
+}
